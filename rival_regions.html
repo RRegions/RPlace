@@ -1,0 +1,417 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <style>
+    * {
+        top: 0;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        width: 45px;
+        height: 45px;
+    }
+    .row {
+        position: absolute;
+        width: 855px;
+    }
+    .square {
+        position: absolute;
+    }
+    .square:hover {
+        z-index: 1;
+        border: solid 1px black;
+        outline: solid 1px white;
+    }
+    .info{
+        color: black;
+        position: absolute;
+        background-color: white;
+        font-family: monospace;
+        z-index: 2;
+        border-radius: 8px;
+        height: 20px;
+        font-size: 16px;
+        width: 100px;
+        pointer-events: none;
+        text-align: center;
+        border: solid 1px black;
+        outline: solid 1px white;
+    }
+    </style>
+    
+    <script>
+        function onTileHovered(x, y) {
+        const pos = document.getElementById("pos");
+        pos.innerText = "[" + (x + -500) + ", " + (y + 200) + "]";
+        pos.style.left = x * 45 + 16 + "px";
+        pos.style.top = y * 45 - 6 + "px";
+      }
+    </script>
+
+    <body>
+    <div id="pos" class="info">[999,999]</div> 
+    <div class='row' style='top: 0px;'><a style='background-color: rgb(0,163,104);left: 0px;' class='square' href='https://new.reddit.com/r/place/?cx=-500&cy=200&px=20' onMouseOver='onTileHovered(0, 0)'></a>
+<a style='background-color: rgb(0,163,104);left: 45px;' class='square' href='https://new.reddit.com/r/place/?cx=-499&cy=200&px=20' onMouseOver='onTileHovered(1, 0)'></a>
+<a style='background-color: rgb(0,163,104);left: 90px;' class='square' href='https://new.reddit.com/r/place/?cx=-498&cy=200&px=20' onMouseOver='onTileHovered(2, 0)'></a>
+<a style='background-color: rgb(0,163,104);left: 135px;' class='square' href='https://new.reddit.com/r/place/?cx=-497&cy=200&px=20' onMouseOver='onTileHovered(3, 0)'></a>
+<a style='background-color: rgb(0,163,104);left: 180px;' class='square' href='https://new.reddit.com/r/place/?cx=-496&cy=200&px=20' onMouseOver='onTileHovered(4, 0)'></a>
+<a style='background-color: rgb(0,163,104);left: 225px;' class='square' href='https://new.reddit.com/r/place/?cx=-495&cy=200&px=20' onMouseOver='onTileHovered(5, 0)'></a>
+<a style='background-color: rgb(0,163,104);left: 270px;' class='square' href='https://new.reddit.com/r/place/?cx=-494&cy=200&px=20' onMouseOver='onTileHovered(6, 0)'></a>
+<a style='background-color: rgb(0,163,104);left: 315px;' class='square' href='https://new.reddit.com/r/place/?cx=-493&cy=200&px=20' onMouseOver='onTileHovered(7, 0)'></a>
+<a style='background-color: rgb(0,163,104);left: 360px;' class='square' href='https://new.reddit.com/r/place/?cx=-492&cy=200&px=20' onMouseOver='onTileHovered(8, 0)'></a>
+<a style='background-color: rgb(0,163,104);left: 405px;' class='square' href='https://new.reddit.com/r/place/?cx=-491&cy=200&px=20' onMouseOver='onTileHovered(9, 0)'></a>
+<a style='background-color: rgb(0,163,104);left: 450px;' class='square' href='https://new.reddit.com/r/place/?cx=-490&cy=200&px=20' onMouseOver='onTileHovered(10, 0)'></a>
+<a style='background-color: rgb(0,163,104);left: 495px;' class='square' href='https://new.reddit.com/r/place/?cx=-489&cy=200&px=20' onMouseOver='onTileHovered(11, 0)'></a>
+<a style='background-color: rgb(0,163,104);left: 540px;' class='square' href='https://new.reddit.com/r/place/?cx=-488&cy=200&px=20' onMouseOver='onTileHovered(12, 0)'></a>
+<a style='background-color: rgb(0,163,104);left: 585px;' class='square' href='https://new.reddit.com/r/place/?cx=-487&cy=200&px=20' onMouseOver='onTileHovered(13, 0)'></a>
+<a style='background-color: rgb(0,163,104);left: 630px;' class='square' href='https://new.reddit.com/r/place/?cx=-486&cy=200&px=20' onMouseOver='onTileHovered(14, 0)'></a>
+<a style='background-color: rgb(0,163,104);left: 675px;' class='square' href='https://new.reddit.com/r/place/?cx=-485&cy=200&px=20' onMouseOver='onTileHovered(15, 0)'></a>
+<a style='background-color: rgb(0,163,104);left: 720px;' class='square' href='https://new.reddit.com/r/place/?cx=-484&cy=200&px=20' onMouseOver='onTileHovered(16, 0)'></a>
+<a style='background-color: rgb(0,163,104);left: 765px;' class='square' href='https://new.reddit.com/r/place/?cx=-483&cy=200&px=20' onMouseOver='onTileHovered(17, 0)'></a>
+<a style='background-color: rgb(0,163,104);left: 810px;' class='square' href='https://new.reddit.com/r/place/?cx=-482&cy=200&px=20' onMouseOver='onTileHovered(18, 0)'></a>
+</div><div class='row' style='top: 45px;'><a style='background-color: rgb(0,163,104);left: 0px;' class='square' href='https://new.reddit.com/r/place/?cx=-500&cy=201&px=20' onMouseOver='onTileHovered(0, 1)'></a>
+<a style='background-color: rgb(0,163,104);left: 45px;' class='square' href='https://new.reddit.com/r/place/?cx=-499&cy=201&px=20' onMouseOver='onTileHovered(1, 1)'></a>
+<a style='background-color: rgb(0,163,104);left: 90px;' class='square' href='https://new.reddit.com/r/place/?cx=-498&cy=201&px=20' onMouseOver='onTileHovered(2, 1)'></a>
+<a style='background-color: rgb(0,163,104);left: 135px;' class='square' href='https://new.reddit.com/r/place/?cx=-497&cy=201&px=20' onMouseOver='onTileHovered(3, 1)'></a>
+<a style='background-color: rgb(0,163,104);left: 180px;' class='square' href='https://new.reddit.com/r/place/?cx=-496&cy=201&px=20' onMouseOver='onTileHovered(4, 1)'></a>
+<a style='background-color: rgb(0,163,104);left: 225px;' class='square' href='https://new.reddit.com/r/place/?cx=-495&cy=201&px=20' onMouseOver='onTileHovered(5, 1)'></a>
+<a style='background-color: rgb(0,163,104);left: 270px;' class='square' href='https://new.reddit.com/r/place/?cx=-494&cy=201&px=20' onMouseOver='onTileHovered(6, 1)'></a>
+<a style='background-color: rgb(0,163,104);left: 315px;' class='square' href='https://new.reddit.com/r/place/?cx=-493&cy=201&px=20' onMouseOver='onTileHovered(7, 1)'></a>
+<a style='background-color: rgb(0,163,104);left: 360px;' class='square' href='https://new.reddit.com/r/place/?cx=-492&cy=201&px=20' onMouseOver='onTileHovered(8, 1)'></a>
+<a style='background-color: rgb(0,163,104);left: 405px;' class='square' href='https://new.reddit.com/r/place/?cx=-491&cy=201&px=20' onMouseOver='onTileHovered(9, 1)'></a>
+<a style='background-color: rgb(0,163,104);left: 450px;' class='square' href='https://new.reddit.com/r/place/?cx=-490&cy=201&px=20' onMouseOver='onTileHovered(10, 1)'></a>
+<a style='background-color: rgb(0,163,104);left: 495px;' class='square' href='https://new.reddit.com/r/place/?cx=-489&cy=201&px=20' onMouseOver='onTileHovered(11, 1)'></a>
+<a style='background-color: rgb(0,163,104);left: 540px;' class='square' href='https://new.reddit.com/r/place/?cx=-488&cy=201&px=20' onMouseOver='onTileHovered(12, 1)'></a>
+<a style='background-color: rgb(0,163,104);left: 585px;' class='square' href='https://new.reddit.com/r/place/?cx=-487&cy=201&px=20' onMouseOver='onTileHovered(13, 1)'></a>
+<a style='background-color: rgb(0,163,104);left: 630px;' class='square' href='https://new.reddit.com/r/place/?cx=-486&cy=201&px=20' onMouseOver='onTileHovered(14, 1)'></a>
+<a style='background-color: rgb(0,163,104);left: 675px;' class='square' href='https://new.reddit.com/r/place/?cx=-485&cy=201&px=20' onMouseOver='onTileHovered(15, 1)'></a>
+<a style='background-color: rgb(0,163,104);left: 720px;' class='square' href='https://new.reddit.com/r/place/?cx=-484&cy=201&px=20' onMouseOver='onTileHovered(16, 1)'></a>
+<a style='background-color: rgb(0,163,104);left: 765px;' class='square' href='https://new.reddit.com/r/place/?cx=-483&cy=201&px=20' onMouseOver='onTileHovered(17, 1)'></a>
+<a style='background-color: rgb(0,163,104);left: 810px;' class='square' href='https://new.reddit.com/r/place/?cx=-482&cy=201&px=20' onMouseOver='onTileHovered(18, 1)'></a>
+</div><div class='row' style='top: 90px;'><a style='background-color: rgb(0,163,104);left: 0px;' class='square' href='https://new.reddit.com/r/place/?cx=-500&cy=202&px=20' onMouseOver='onTileHovered(0, 2)'></a>
+<a style='background-color: rgb(0,163,104);left: 45px;' class='square' href='https://new.reddit.com/r/place/?cx=-499&cy=202&px=20' onMouseOver='onTileHovered(1, 2)'></a>
+<a style='background-color: rgb(0,163,104);left: 90px;' class='square' href='https://new.reddit.com/r/place/?cx=-498&cy=202&px=20' onMouseOver='onTileHovered(2, 2)'></a>
+<a style='background-color: rgb(0,163,104);left: 135px;' class='square' href='https://new.reddit.com/r/place/?cx=-497&cy=202&px=20' onMouseOver='onTileHovered(3, 2)'></a>
+<a style='background-color: rgb(0,163,104);left: 180px;' class='square' href='https://new.reddit.com/r/place/?cx=-496&cy=202&px=20' onMouseOver='onTileHovered(4, 2)'></a>
+<a style='background-color: rgb(0,163,104);left: 225px;' class='square' href='https://new.reddit.com/r/place/?cx=-495&cy=202&px=20' onMouseOver='onTileHovered(5, 2)'></a>
+<a style='background-color: rgb(0,163,104);left: 270px;' class='square' href='https://new.reddit.com/r/place/?cx=-494&cy=202&px=20' onMouseOver='onTileHovered(6, 2)'></a>
+<a style='background-color: rgb(0,163,104);left: 315px;' class='square' href='https://new.reddit.com/r/place/?cx=-493&cy=202&px=20' onMouseOver='onTileHovered(7, 2)'></a>
+<a style='background-color: rgb(0,163,104);left: 360px;' class='square' href='https://new.reddit.com/r/place/?cx=-492&cy=202&px=20' onMouseOver='onTileHovered(8, 2)'></a>
+<a style='background-color: rgb(0,163,104);left: 405px;' class='square' href='https://new.reddit.com/r/place/?cx=-491&cy=202&px=20' onMouseOver='onTileHovered(9, 2)'></a>
+<a style='background-color: rgb(0,163,104);left: 450px;' class='square' href='https://new.reddit.com/r/place/?cx=-490&cy=202&px=20' onMouseOver='onTileHovered(10, 2)'></a>
+<a style='background-color: rgb(0,163,104);left: 495px;' class='square' href='https://new.reddit.com/r/place/?cx=-489&cy=202&px=20' onMouseOver='onTileHovered(11, 2)'></a>
+<a style='background-color: rgb(0,163,104);left: 540px;' class='square' href='https://new.reddit.com/r/place/?cx=-488&cy=202&px=20' onMouseOver='onTileHovered(12, 2)'></a>
+<a style='background-color: rgb(0,163,104);left: 585px;' class='square' href='https://new.reddit.com/r/place/?cx=-487&cy=202&px=20' onMouseOver='onTileHovered(13, 2)'></a>
+<a style='background-color: rgb(0,163,104);left: 630px;' class='square' href='https://new.reddit.com/r/place/?cx=-486&cy=202&px=20' onMouseOver='onTileHovered(14, 2)'></a>
+<a style='background-color: rgb(0,163,104);left: 675px;' class='square' href='https://new.reddit.com/r/place/?cx=-485&cy=202&px=20' onMouseOver='onTileHovered(15, 2)'></a>
+<a style='background-color: rgb(0,163,104);left: 720px;' class='square' href='https://new.reddit.com/r/place/?cx=-484&cy=202&px=20' onMouseOver='onTileHovered(16, 2)'></a>
+<a style='background-color: rgb(0,163,104);left: 765px;' class='square' href='https://new.reddit.com/r/place/?cx=-483&cy=202&px=20' onMouseOver='onTileHovered(17, 2)'></a>
+<a style='background-color: rgb(0,163,104);left: 810px;' class='square' href='https://new.reddit.com/r/place/?cx=-482&cy=202&px=20' onMouseOver='onTileHovered(18, 2)'></a>
+</div><div class='row' style='top: 135px;'><a style='background-color: rgb(0,163,104);left: 0px;' class='square' href='https://new.reddit.com/r/place/?cx=-500&cy=203&px=20' onMouseOver='onTileHovered(0, 3)'></a>
+<a style='background-color: rgb(0,163,104);left: 45px;' class='square' href='https://new.reddit.com/r/place/?cx=-499&cy=203&px=20' onMouseOver='onTileHovered(1, 3)'></a>
+<a style='background-color: rgb(0,163,104);left: 90px;' class='square' href='https://new.reddit.com/r/place/?cx=-498&cy=203&px=20' onMouseOver='onTileHovered(2, 3)'></a>
+<a style='background-color: rgb(0,163,104);left: 135px;' class='square' href='https://new.reddit.com/r/place/?cx=-497&cy=203&px=20' onMouseOver='onTileHovered(3, 3)'></a>
+<a style='background-color: rgb(0,163,104);left: 180px;' class='square' href='https://new.reddit.com/r/place/?cx=-496&cy=203&px=20' onMouseOver='onTileHovered(4, 3)'></a>
+<a style='background-color: rgb(0,163,104);left: 225px;' class='square' href='https://new.reddit.com/r/place/?cx=-495&cy=203&px=20' onMouseOver='onTileHovered(5, 3)'></a>
+<a style='background-color: rgb(0,163,104);left: 270px;' class='square' href='https://new.reddit.com/r/place/?cx=-494&cy=203&px=20' onMouseOver='onTileHovered(6, 3)'></a>
+<a style='background-color: rgb(0,163,104);left: 315px;' class='square' href='https://new.reddit.com/r/place/?cx=-493&cy=203&px=20' onMouseOver='onTileHovered(7, 3)'></a>
+<a style='background-color: rgb(0,163,104);left: 360px;' class='square' href='https://new.reddit.com/r/place/?cx=-492&cy=203&px=20' onMouseOver='onTileHovered(8, 3)'></a>
+<a style='background-color: rgb(0,163,104);left: 405px;' class='square' href='https://new.reddit.com/r/place/?cx=-491&cy=203&px=20' onMouseOver='onTileHovered(9, 3)'></a>
+<a style='background-color: rgb(0,163,104);left: 450px;' class='square' href='https://new.reddit.com/r/place/?cx=-490&cy=203&px=20' onMouseOver='onTileHovered(10, 3)'></a>
+<a style='background-color: rgb(0,163,104);left: 495px;' class='square' href='https://new.reddit.com/r/place/?cx=-489&cy=203&px=20' onMouseOver='onTileHovered(11, 3)'></a>
+<a style='background-color: rgb(0,163,104);left: 540px;' class='square' href='https://new.reddit.com/r/place/?cx=-488&cy=203&px=20' onMouseOver='onTileHovered(12, 3)'></a>
+<a style='background-color: rgb(0,163,104);left: 585px;' class='square' href='https://new.reddit.com/r/place/?cx=-487&cy=203&px=20' onMouseOver='onTileHovered(13, 3)'></a>
+<a style='background-color: rgb(54,144,234);left: 630px;' class='square' href='https://new.reddit.com/r/place/?cx=-486&cy=203&px=20' onMouseOver='onTileHovered(14, 3)'></a>
+<a style='background-color: rgb(54,144,234);left: 675px;' class='square' href='https://new.reddit.com/r/place/?cx=-485&cy=203&px=20' onMouseOver='onTileHovered(15, 3)'></a>
+<a style='background-color: rgb(54,144,234);left: 720px;' class='square' href='https://new.reddit.com/r/place/?cx=-484&cy=203&px=20' onMouseOver='onTileHovered(16, 3)'></a>
+<a style='background-color: rgb(54,144,234);left: 765px;' class='square' href='https://new.reddit.com/r/place/?cx=-483&cy=203&px=20' onMouseOver='onTileHovered(17, 3)'></a>
+<a style='background-color: rgb(54,144,234);left: 810px;' class='square' href='https://new.reddit.com/r/place/?cx=-482&cy=203&px=20' onMouseOver='onTileHovered(18, 3)'></a>
+</div><div class='row' style='top: 180px;'><a style='background-color: rgb(0,163,104);left: 0px;' class='square' href='https://new.reddit.com/r/place/?cx=-500&cy=204&px=20' onMouseOver='onTileHovered(0, 4)'></a>
+<a style='background-color: rgb(0,163,104);left: 45px;' class='square' href='https://new.reddit.com/r/place/?cx=-499&cy=204&px=20' onMouseOver='onTileHovered(1, 4)'></a>
+<a style='background-color: rgb(0,163,104);left: 90px;' class='square' href='https://new.reddit.com/r/place/?cx=-498&cy=204&px=20' onMouseOver='onTileHovered(2, 4)'></a>
+<a style='background-color: rgb(0,163,104);left: 135px;' class='square' href='https://new.reddit.com/r/place/?cx=-497&cy=204&px=20' onMouseOver='onTileHovered(3, 4)'></a>
+<a style='background-color: rgb(0,163,104);left: 180px;' class='square' href='https://new.reddit.com/r/place/?cx=-496&cy=204&px=20' onMouseOver='onTileHovered(4, 4)'></a>
+<a style='background-color: rgb(0,163,104);left: 225px;' class='square' href='https://new.reddit.com/r/place/?cx=-495&cy=204&px=20' onMouseOver='onTileHovered(5, 4)'></a>
+<a style='background-color: rgb(0,163,104);left: 270px;' class='square' href='https://new.reddit.com/r/place/?cx=-494&cy=204&px=20' onMouseOver='onTileHovered(6, 4)'></a>
+<a style='background-color: rgb(0,163,104);left: 315px;' class='square' href='https://new.reddit.com/r/place/?cx=-493&cy=204&px=20' onMouseOver='onTileHovered(7, 4)'></a>
+<a style='background-color: rgb(0,163,104);left: 360px;' class='square' href='https://new.reddit.com/r/place/?cx=-492&cy=204&px=20' onMouseOver='onTileHovered(8, 4)'></a>
+<a style='background-color: rgb(0,163,104);left: 405px;' class='square' href='https://new.reddit.com/r/place/?cx=-491&cy=204&px=20' onMouseOver='onTileHovered(9, 4)'></a>
+<a style='background-color: rgb(0,163,104);left: 450px;' class='square' href='https://new.reddit.com/r/place/?cx=-490&cy=204&px=20' onMouseOver='onTileHovered(10, 4)'></a>
+<a style='background-color: rgb(54,144,234);left: 495px;' class='square' href='https://new.reddit.com/r/place/?cx=-489&cy=204&px=20' onMouseOver='onTileHovered(11, 4)'></a>
+<a style='background-color: rgb(54,144,234);left: 540px;' class='square' href='https://new.reddit.com/r/place/?cx=-488&cy=204&px=20' onMouseOver='onTileHovered(12, 4)'></a>
+<a style='background-color: rgb(54,144,234);left: 585px;' class='square' href='https://new.reddit.com/r/place/?cx=-487&cy=204&px=20' onMouseOver='onTileHovered(13, 4)'></a>
+<a style='background-color: rgb(54,144,234);left: 630px;' class='square' href='https://new.reddit.com/r/place/?cx=-486&cy=204&px=20' onMouseOver='onTileHovered(14, 4)'></a>
+<a style='background-color: rgb(54,144,234);left: 675px;' class='square' href='https://new.reddit.com/r/place/?cx=-485&cy=204&px=20' onMouseOver='onTileHovered(15, 4)'></a>
+<a style='background-color: rgb(54,144,234);left: 720px;' class='square' href='https://new.reddit.com/r/place/?cx=-484&cy=204&px=20' onMouseOver='onTileHovered(16, 4)'></a>
+<a style='background-color: rgb(54,144,234);left: 765px;' class='square' href='https://new.reddit.com/r/place/?cx=-483&cy=204&px=20' onMouseOver='onTileHovered(17, 4)'></a>
+<a style='background-color: rgb(54,144,234);left: 810px;' class='square' href='https://new.reddit.com/r/place/?cx=-482&cy=204&px=20' onMouseOver='onTileHovered(18, 4)'></a>
+</div><div class='row' style='top: 225px;'><a style='background-color: rgb(0,163,104);left: 0px;' class='square' href='https://new.reddit.com/r/place/?cx=-500&cy=205&px=20' onMouseOver='onTileHovered(0, 5)'></a>
+<a style='background-color: rgb(0,163,104);left: 45px;' class='square' href='https://new.reddit.com/r/place/?cx=-499&cy=205&px=20' onMouseOver='onTileHovered(1, 5)'></a>
+<a style='background-color: rgb(0,163,104);left: 90px;' class='square' href='https://new.reddit.com/r/place/?cx=-498&cy=205&px=20' onMouseOver='onTileHovered(2, 5)'></a>
+<a style='background-color: rgb(0,163,104);left: 135px;' class='square' href='https://new.reddit.com/r/place/?cx=-497&cy=205&px=20' onMouseOver='onTileHovered(3, 5)'></a>
+<a style='background-color: rgb(0,163,104);left: 180px;' class='square' href='https://new.reddit.com/r/place/?cx=-496&cy=205&px=20' onMouseOver='onTileHovered(4, 5)'></a>
+<a style='background-color: rgb(0,163,104);left: 225px;' class='square' href='https://new.reddit.com/r/place/?cx=-495&cy=205&px=20' onMouseOver='onTileHovered(5, 5)'></a>
+<a style='background-color: rgb(0,163,104);left: 270px;' class='square' href='https://new.reddit.com/r/place/?cx=-494&cy=205&px=20' onMouseOver='onTileHovered(6, 5)'></a>
+<a style='background-color: rgb(0,163,104);left: 315px;' class='square' href='https://new.reddit.com/r/place/?cx=-493&cy=205&px=20' onMouseOver='onTileHovered(7, 5)'></a>
+<a style='background-color: rgb(0,163,104);left: 360px;' class='square' href='https://new.reddit.com/r/place/?cx=-492&cy=205&px=20' onMouseOver='onTileHovered(8, 5)'></a>
+<a style='background-color: rgb(54,144,234);left: 405px;' class='square' href='https://new.reddit.com/r/place/?cx=-491&cy=205&px=20' onMouseOver='onTileHovered(9, 5)'></a>
+<a style='background-color: rgb(54,144,234);left: 450px;' class='square' href='https://new.reddit.com/r/place/?cx=-490&cy=205&px=20' onMouseOver='onTileHovered(10, 5)'></a>
+<a style='background-color: rgb(54,144,234);left: 495px;' class='square' href='https://new.reddit.com/r/place/?cx=-489&cy=205&px=20' onMouseOver='onTileHovered(11, 5)'></a>
+<a style='background-color: rgb(54,144,234);left: 540px;' class='square' href='https://new.reddit.com/r/place/?cx=-488&cy=205&px=20' onMouseOver='onTileHovered(12, 5)'></a>
+<a style='background-color: rgb(54,144,234);left: 585px;' class='square' href='https://new.reddit.com/r/place/?cx=-487&cy=205&px=20' onMouseOver='onTileHovered(13, 5)'></a>
+<a style='background-color: rgb(54,144,234);left: 630px;' class='square' href='https://new.reddit.com/r/place/?cx=-486&cy=205&px=20' onMouseOver='onTileHovered(14, 5)'></a>
+<a style='background-color: rgb(54,144,234);left: 675px;' class='square' href='https://new.reddit.com/r/place/?cx=-485&cy=205&px=20' onMouseOver='onTileHovered(15, 5)'></a>
+<a style='background-color: rgb(255,168,0);left: 720px;' class='square' href='https://new.reddit.com/r/place/?cx=-484&cy=205&px=20' onMouseOver='onTileHovered(16, 5)'></a>
+<a style='background-color: rgb(255,168,0);left: 765px;' class='square' href='https://new.reddit.com/r/place/?cx=-483&cy=205&px=20' onMouseOver='onTileHovered(17, 5)'></a>
+<a style='background-color: rgb(255,168,0);left: 810px;' class='square' href='https://new.reddit.com/r/place/?cx=-482&cy=205&px=20' onMouseOver='onTileHovered(18, 5)'></a>
+</div><div class='row' style='top: 270px;'><a style='background-color: rgb(0,163,104);left: 0px;' class='square' href='https://new.reddit.com/r/place/?cx=-500&cy=206&px=20' onMouseOver='onTileHovered(0, 6)'></a>
+<a style='background-color: rgb(0,163,104);left: 45px;' class='square' href='https://new.reddit.com/r/place/?cx=-499&cy=206&px=20' onMouseOver='onTileHovered(1, 6)'></a>
+<a style='background-color: rgb(0,163,104);left: 90px;' class='square' href='https://new.reddit.com/r/place/?cx=-498&cy=206&px=20' onMouseOver='onTileHovered(2, 6)'></a>
+<a style='background-color: rgb(255,255,255);left: 135px;' class='square' href='https://new.reddit.com/r/place/?cx=-497&cy=206&px=20' onMouseOver='onTileHovered(3, 6)'></a>
+<a style='background-color: rgb(255,255,255);left: 180px;' class='square' href='https://new.reddit.com/r/place/?cx=-496&cy=206&px=20' onMouseOver='onTileHovered(4, 6)'></a>
+<a style='background-color: rgb(255,255,255);left: 225px;' class='square' href='https://new.reddit.com/r/place/?cx=-495&cy=206&px=20' onMouseOver='onTileHovered(5, 6)'></a>
+<a style='background-color: rgb(255,255,255);left: 270px;' class='square' href='https://new.reddit.com/r/place/?cx=-494&cy=206&px=20' onMouseOver='onTileHovered(6, 6)'></a>
+<a style='background-color: rgb(255,255,255);left: 315px;' class='square' href='https://new.reddit.com/r/place/?cx=-493&cy=206&px=20' onMouseOver='onTileHovered(7, 6)'></a>
+<a style='background-color: rgb(255,255,255);left: 360px;' class='square' href='https://new.reddit.com/r/place/?cx=-492&cy=206&px=20' onMouseOver='onTileHovered(8, 6)'></a>
+<a style='background-color: rgb(54,144,234);left: 405px;' class='square' href='https://new.reddit.com/r/place/?cx=-491&cy=206&px=20' onMouseOver='onTileHovered(9, 6)'></a>
+<a style='background-color: rgb(255,255,255);left: 450px;' class='square' href='https://new.reddit.com/r/place/?cx=-490&cy=206&px=20' onMouseOver='onTileHovered(10, 6)'></a>
+<a style='background-color: rgb(255,255,255);left: 495px;' class='square' href='https://new.reddit.com/r/place/?cx=-489&cy=206&px=20' onMouseOver='onTileHovered(11, 6)'></a>
+<a style='background-color: rgb(255,255,255);left: 540px;' class='square' href='https://new.reddit.com/r/place/?cx=-488&cy=206&px=20' onMouseOver='onTileHovered(12, 6)'></a>
+<a style='background-color: rgb(255,255,255);left: 585px;' class='square' href='https://new.reddit.com/r/place/?cx=-487&cy=206&px=20' onMouseOver='onTileHovered(13, 6)'></a>
+<a style='background-color: rgb(255,255,255);left: 630px;' class='square' href='https://new.reddit.com/r/place/?cx=-486&cy=206&px=20' onMouseOver='onTileHovered(14, 6)'></a>
+<a style='background-color: rgb(255,255,255);left: 675px;' class='square' href='https://new.reddit.com/r/place/?cx=-485&cy=206&px=20' onMouseOver='onTileHovered(15, 6)'></a>
+<a style='background-color: rgb(255,168,0);left: 720px;' class='square' href='https://new.reddit.com/r/place/?cx=-484&cy=206&px=20' onMouseOver='onTileHovered(16, 6)'></a>
+<a style='background-color: rgb(255,168,0);left: 765px;' class='square' href='https://new.reddit.com/r/place/?cx=-483&cy=206&px=20' onMouseOver='onTileHovered(17, 6)'></a>
+<a style='background-color: rgb(255,168,0);left: 810px;' class='square' href='https://new.reddit.com/r/place/?cx=-482&cy=206&px=20' onMouseOver='onTileHovered(18, 6)'></a>
+</div><div class='row' style='top: 315px;'><a style='background-color: rgb(54,144,234);left: 0px;' class='square' href='https://new.reddit.com/r/place/?cx=-500&cy=207&px=20' onMouseOver='onTileHovered(0, 7)'></a>
+<a style='background-color: rgb(54,144,234);left: 45px;' class='square' href='https://new.reddit.com/r/place/?cx=-499&cy=207&px=20' onMouseOver='onTileHovered(1, 7)'></a>
+<a style='background-color: rgb(54,144,234);left: 90px;' class='square' href='https://new.reddit.com/r/place/?cx=-498&cy=207&px=20' onMouseOver='onTileHovered(2, 7)'></a>
+<a style='background-color: rgb(255,255,255);left: 135px;' class='square' href='https://new.reddit.com/r/place/?cx=-497&cy=207&px=20' onMouseOver='onTileHovered(3, 7)'></a>
+<a style='background-color: rgb(255,255,255);left: 180px;' class='square' href='https://new.reddit.com/r/place/?cx=-496&cy=207&px=20' onMouseOver='onTileHovered(4, 7)'></a>
+<a style='background-color: rgb(54,144,234);left: 225px;' class='square' href='https://new.reddit.com/r/place/?cx=-495&cy=207&px=20' onMouseOver='onTileHovered(5, 7)'></a>
+<a style='background-color: rgb(54,144,234);left: 270px;' class='square' href='https://new.reddit.com/r/place/?cx=-494&cy=207&px=20' onMouseOver='onTileHovered(6, 7)'></a>
+<a style='background-color: rgb(255,255,255);left: 315px;' class='square' href='https://new.reddit.com/r/place/?cx=-493&cy=207&px=20' onMouseOver='onTileHovered(7, 7)'></a>
+<a style='background-color: rgb(255,255,255);left: 360px;' class='square' href='https://new.reddit.com/r/place/?cx=-492&cy=207&px=20' onMouseOver='onTileHovered(8, 7)'></a>
+<a style='background-color: rgb(54,144,234);left: 405px;' class='square' href='https://new.reddit.com/r/place/?cx=-491&cy=207&px=20' onMouseOver='onTileHovered(9, 7)'></a>
+<a style='background-color: rgb(255,255,255);left: 450px;' class='square' href='https://new.reddit.com/r/place/?cx=-490&cy=207&px=20' onMouseOver='onTileHovered(10, 7)'></a>
+<a style='background-color: rgb(255,255,255);left: 495px;' class='square' href='https://new.reddit.com/r/place/?cx=-489&cy=207&px=20' onMouseOver='onTileHovered(11, 7)'></a>
+<a style='background-color: rgb(54,144,234);left: 540px;' class='square' href='https://new.reddit.com/r/place/?cx=-488&cy=207&px=20' onMouseOver='onTileHovered(12, 7)'></a>
+<a style='background-color: rgb(54,144,234);left: 585px;' class='square' href='https://new.reddit.com/r/place/?cx=-487&cy=207&px=20' onMouseOver='onTileHovered(13, 7)'></a>
+<a style='background-color: rgb(255,255,255);left: 630px;' class='square' href='https://new.reddit.com/r/place/?cx=-486&cy=207&px=20' onMouseOver='onTileHovered(14, 7)'></a>
+<a style='background-color: rgb(255,255,255);left: 675px;' class='square' href='https://new.reddit.com/r/place/?cx=-485&cy=207&px=20' onMouseOver='onTileHovered(15, 7)'></a>
+<a style='background-color: rgb(255,168,0);left: 720px;' class='square' href='https://new.reddit.com/r/place/?cx=-484&cy=207&px=20' onMouseOver='onTileHovered(16, 7)'></a>
+<a style='background-color: rgb(255,168,0);left: 765px;' class='square' href='https://new.reddit.com/r/place/?cx=-483&cy=207&px=20' onMouseOver='onTileHovered(17, 7)'></a>
+<a style='background-color: rgb(255,168,0);left: 810px;' class='square' href='https://new.reddit.com/r/place/?cx=-482&cy=207&px=20' onMouseOver='onTileHovered(18, 7)'></a>
+</div><div class='row' style='top: 360px;'><a style='background-color: rgb(54,144,234);left: 0px;' class='square' href='https://new.reddit.com/r/place/?cx=-500&cy=208&px=20' onMouseOver='onTileHovered(0, 8)'></a>
+<a style='background-color: rgb(54,144,234);left: 45px;' class='square' href='https://new.reddit.com/r/place/?cx=-499&cy=208&px=20' onMouseOver='onTileHovered(1, 8)'></a>
+<a style='background-color: rgb(54,144,234);left: 90px;' class='square' href='https://new.reddit.com/r/place/?cx=-498&cy=208&px=20' onMouseOver='onTileHovered(2, 8)'></a>
+<a style='background-color: rgb(255,255,255);left: 135px;' class='square' href='https://new.reddit.com/r/place/?cx=-497&cy=208&px=20' onMouseOver='onTileHovered(3, 8)'></a>
+<a style='background-color: rgb(255,255,255);left: 180px;' class='square' href='https://new.reddit.com/r/place/?cx=-496&cy=208&px=20' onMouseOver='onTileHovered(4, 8)'></a>
+<a style='background-color: rgb(54,144,234);left: 225px;' class='square' href='https://new.reddit.com/r/place/?cx=-495&cy=208&px=20' onMouseOver='onTileHovered(5, 8)'></a>
+<a style='background-color: rgb(54,144,234);left: 270px;' class='square' href='https://new.reddit.com/r/place/?cx=-494&cy=208&px=20' onMouseOver='onTileHovered(6, 8)'></a>
+<a style='background-color: rgb(255,255,255);left: 315px;' class='square' href='https://new.reddit.com/r/place/?cx=-493&cy=208&px=20' onMouseOver='onTileHovered(7, 8)'></a>
+<a style='background-color: rgb(255,255,255);left: 360px;' class='square' href='https://new.reddit.com/r/place/?cx=-492&cy=208&px=20' onMouseOver='onTileHovered(8, 8)'></a>
+<a style='background-color: rgb(54,144,234);left: 405px;' class='square' href='https://new.reddit.com/r/place/?cx=-491&cy=208&px=20' onMouseOver='onTileHovered(9, 8)'></a>
+<a style='background-color: rgb(255,255,255);left: 450px;' class='square' href='https://new.reddit.com/r/place/?cx=-490&cy=208&px=20' onMouseOver='onTileHovered(10, 8)'></a>
+<a style='background-color: rgb(255,255,255);left: 495px;' class='square' href='https://new.reddit.com/r/place/?cx=-489&cy=208&px=20' onMouseOver='onTileHovered(11, 8)'></a>
+<a style='background-color: rgb(54,144,234);left: 540px;' class='square' href='https://new.reddit.com/r/place/?cx=-488&cy=208&px=20' onMouseOver='onTileHovered(12, 8)'></a>
+<a style='background-color: rgb(54,144,234);left: 585px;' class='square' href='https://new.reddit.com/r/place/?cx=-487&cy=208&px=20' onMouseOver='onTileHovered(13, 8)'></a>
+<a style='background-color: rgb(255,255,255);left: 630px;' class='square' href='https://new.reddit.com/r/place/?cx=-486&cy=208&px=20' onMouseOver='onTileHovered(14, 8)'></a>
+<a style='background-color: rgb(255,255,255);left: 675px;' class='square' href='https://new.reddit.com/r/place/?cx=-485&cy=208&px=20' onMouseOver='onTileHovered(15, 8)'></a>
+<a style='background-color: rgb(255,168,0);left: 720px;' class='square' href='https://new.reddit.com/r/place/?cx=-484&cy=208&px=20' onMouseOver='onTileHovered(16, 8)'></a>
+<a style='background-color: rgb(255,168,0);left: 765px;' class='square' href='https://new.reddit.com/r/place/?cx=-483&cy=208&px=20' onMouseOver='onTileHovered(17, 8)'></a>
+<a style='background-color: rgb(255,168,0);left: 810px;' class='square' href='https://new.reddit.com/r/place/?cx=-482&cy=208&px=20' onMouseOver='onTileHovered(18, 8)'></a>
+</div><div class='row' style='top: 405px;'><a style='background-color: rgb(54,144,234);left: 0px;' class='square' href='https://new.reddit.com/r/place/?cx=-500&cy=209&px=20' onMouseOver='onTileHovered(0, 9)'></a>
+<a style='background-color: rgb(54,144,234);left: 45px;' class='square' href='https://new.reddit.com/r/place/?cx=-499&cy=209&px=20' onMouseOver='onTileHovered(1, 9)'></a>
+<a style='background-color: rgb(54,144,234);left: 90px;' class='square' href='https://new.reddit.com/r/place/?cx=-498&cy=209&px=20' onMouseOver='onTileHovered(2, 9)'></a>
+<a style='background-color: rgb(255,255,255);left: 135px;' class='square' href='https://new.reddit.com/r/place/?cx=-497&cy=209&px=20' onMouseOver='onTileHovered(3, 9)'></a>
+<a style='background-color: rgb(255,255,255);left: 180px;' class='square' href='https://new.reddit.com/r/place/?cx=-496&cy=209&px=20' onMouseOver='onTileHovered(4, 9)'></a>
+<a style='background-color: rgb(255,255,255);left: 225px;' class='square' href='https://new.reddit.com/r/place/?cx=-495&cy=209&px=20' onMouseOver='onTileHovered(5, 9)'></a>
+<a style='background-color: rgb(255,255,255);left: 270px;' class='square' href='https://new.reddit.com/r/place/?cx=-494&cy=209&px=20' onMouseOver='onTileHovered(6, 9)'></a>
+<a style='background-color: rgb(255,255,255);left: 315px;' class='square' href='https://new.reddit.com/r/place/?cx=-493&cy=209&px=20' onMouseOver='onTileHovered(7, 9)'></a>
+<a style='background-color: rgb(255,255,255);left: 360px;' class='square' href='https://new.reddit.com/r/place/?cx=-492&cy=209&px=20' onMouseOver='onTileHovered(8, 9)'></a>
+<a style='background-color: rgb(54,144,234);left: 405px;' class='square' href='https://new.reddit.com/r/place/?cx=-491&cy=209&px=20' onMouseOver='onTileHovered(9, 9)'></a>
+<a style='background-color: rgb(255,255,255);left: 450px;' class='square' href='https://new.reddit.com/r/place/?cx=-490&cy=209&px=20' onMouseOver='onTileHovered(10, 9)'></a>
+<a style='background-color: rgb(255,255,255);left: 495px;' class='square' href='https://new.reddit.com/r/place/?cx=-489&cy=209&px=20' onMouseOver='onTileHovered(11, 9)'></a>
+<a style='background-color: rgb(255,255,255);left: 540px;' class='square' href='https://new.reddit.com/r/place/?cx=-488&cy=209&px=20' onMouseOver='onTileHovered(12, 9)'></a>
+<a style='background-color: rgb(255,255,255);left: 585px;' class='square' href='https://new.reddit.com/r/place/?cx=-487&cy=209&px=20' onMouseOver='onTileHovered(13, 9)'></a>
+<a style='background-color: rgb(255,255,255);left: 630px;' class='square' href='https://new.reddit.com/r/place/?cx=-486&cy=209&px=20' onMouseOver='onTileHovered(14, 9)'></a>
+<a style='background-color: rgb(255,255,255);left: 675px;' class='square' href='https://new.reddit.com/r/place/?cx=-485&cy=209&px=20' onMouseOver='onTileHovered(15, 9)'></a>
+<a style='background-color: rgb(54,144,234);left: 720px;' class='square' href='https://new.reddit.com/r/place/?cx=-484&cy=209&px=20' onMouseOver='onTileHovered(16, 9)'></a>
+<a style='background-color: rgb(255,168,0);left: 765px;' class='square' href='https://new.reddit.com/r/place/?cx=-483&cy=209&px=20' onMouseOver='onTileHovered(17, 9)'></a>
+<a style='background-color: rgb(255,168,0);left: 810px;' class='square' href='https://new.reddit.com/r/place/?cx=-482&cy=209&px=20' onMouseOver='onTileHovered(18, 9)'></a>
+</div><div class='row' style='top: 450px;'><a style='background-color: rgb(54,144,234);left: 0px;' class='square' href='https://new.reddit.com/r/place/?cx=-500&cy=210&px=20' onMouseOver='onTileHovered(0, 10)'></a>
+<a style='background-color: rgb(54,144,234);left: 45px;' class='square' href='https://new.reddit.com/r/place/?cx=-499&cy=210&px=20' onMouseOver='onTileHovered(1, 10)'></a>
+<a style='background-color: rgb(54,144,234);left: 90px;' class='square' href='https://new.reddit.com/r/place/?cx=-498&cy=210&px=20' onMouseOver='onTileHovered(2, 10)'></a>
+<a style='background-color: rgb(255,255,255);left: 135px;' class='square' href='https://new.reddit.com/r/place/?cx=-497&cy=210&px=20' onMouseOver='onTileHovered(3, 10)'></a>
+<a style='background-color: rgb(255,255,255);left: 180px;' class='square' href='https://new.reddit.com/r/place/?cx=-496&cy=210&px=20' onMouseOver='onTileHovered(4, 10)'></a>
+<a style='background-color: rgb(255,255,255);left: 225px;' class='square' href='https://new.reddit.com/r/place/?cx=-495&cy=210&px=20' onMouseOver='onTileHovered(5, 10)'></a>
+<a style='background-color: rgb(255,255,255);left: 270px;' class='square' href='https://new.reddit.com/r/place/?cx=-494&cy=210&px=20' onMouseOver='onTileHovered(6, 10)'></a>
+<a style='background-color: rgb(255,255,255);left: 315px;' class='square' href='https://new.reddit.com/r/place/?cx=-493&cy=210&px=20' onMouseOver='onTileHovered(7, 10)'></a>
+<a style='background-color: rgb(255,255,255);left: 360px;' class='square' href='https://new.reddit.com/r/place/?cx=-492&cy=210&px=20' onMouseOver='onTileHovered(8, 10)'></a>
+<a style='background-color: rgb(54,144,234);left: 405px;' class='square' href='https://new.reddit.com/r/place/?cx=-491&cy=210&px=20' onMouseOver='onTileHovered(9, 10)'></a>
+<a style='background-color: rgb(255,255,255);left: 450px;' class='square' href='https://new.reddit.com/r/place/?cx=-490&cy=210&px=20' onMouseOver='onTileHovered(10, 10)'></a>
+<a style='background-color: rgb(255,255,255);left: 495px;' class='square' href='https://new.reddit.com/r/place/?cx=-489&cy=210&px=20' onMouseOver='onTileHovered(11, 10)'></a>
+<a style='background-color: rgb(255,255,255);left: 540px;' class='square' href='https://new.reddit.com/r/place/?cx=-488&cy=210&px=20' onMouseOver='onTileHovered(12, 10)'></a>
+<a style='background-color: rgb(255,255,255);left: 585px;' class='square' href='https://new.reddit.com/r/place/?cx=-487&cy=210&px=20' onMouseOver='onTileHovered(13, 10)'></a>
+<a style='background-color: rgb(255,255,255);left: 630px;' class='square' href='https://new.reddit.com/r/place/?cx=-486&cy=210&px=20' onMouseOver='onTileHovered(14, 10)'></a>
+<a style='background-color: rgb(255,255,255);left: 675px;' class='square' href='https://new.reddit.com/r/place/?cx=-485&cy=210&px=20' onMouseOver='onTileHovered(15, 10)'></a>
+<a style='background-color: rgb(54,144,234);left: 720px;' class='square' href='https://new.reddit.com/r/place/?cx=-484&cy=210&px=20' onMouseOver='onTileHovered(16, 10)'></a>
+<a style='background-color: rgb(255,168,0);left: 765px;' class='square' href='https://new.reddit.com/r/place/?cx=-483&cy=210&px=20' onMouseOver='onTileHovered(17, 10)'></a>
+<a style='background-color: rgb(255,168,0);left: 810px;' class='square' href='https://new.reddit.com/r/place/?cx=-482&cy=210&px=20' onMouseOver='onTileHovered(18, 10)'></a>
+</div><div class='row' style='top: 495px;'><a style='background-color: rgb(54,144,234);left: 0px;' class='square' href='https://new.reddit.com/r/place/?cx=-500&cy=211&px=20' onMouseOver='onTileHovered(0, 11)'></a>
+<a style='background-color: rgb(54,144,234);left: 45px;' class='square' href='https://new.reddit.com/r/place/?cx=-499&cy=211&px=20' onMouseOver='onTileHovered(1, 11)'></a>
+<a style='background-color: rgb(54,144,234);left: 90px;' class='square' href='https://new.reddit.com/r/place/?cx=-498&cy=211&px=20' onMouseOver='onTileHovered(2, 11)'></a>
+<a style='background-color: rgb(255,255,255);left: 135px;' class='square' href='https://new.reddit.com/r/place/?cx=-497&cy=211&px=20' onMouseOver='onTileHovered(3, 11)'></a>
+<a style='background-color: rgb(255,255,255);left: 180px;' class='square' href='https://new.reddit.com/r/place/?cx=-496&cy=211&px=20' onMouseOver='onTileHovered(4, 11)'></a>
+<a style='background-color: rgb(54,144,234);left: 225px;' class='square' href='https://new.reddit.com/r/place/?cx=-495&cy=211&px=20' onMouseOver='onTileHovered(5, 11)'></a>
+<a style='background-color: rgb(255,255,255);left: 270px;' class='square' href='https://new.reddit.com/r/place/?cx=-494&cy=211&px=20' onMouseOver='onTileHovered(6, 11)'></a>
+<a style='background-color: rgb(255,255,255);left: 315px;' class='square' href='https://new.reddit.com/r/place/?cx=-493&cy=211&px=20' onMouseOver='onTileHovered(7, 11)'></a>
+<a style='background-color: rgb(54,144,234);left: 360px;' class='square' href='https://new.reddit.com/r/place/?cx=-492&cy=211&px=20' onMouseOver='onTileHovered(8, 11)'></a>
+<a style='background-color: rgb(54,144,234);left: 405px;' class='square' href='https://new.reddit.com/r/place/?cx=-491&cy=211&px=20' onMouseOver='onTileHovered(9, 11)'></a>
+<a style='background-color: rgb(255,255,255);left: 450px;' class='square' href='https://new.reddit.com/r/place/?cx=-490&cy=211&px=20' onMouseOver='onTileHovered(10, 11)'></a>
+<a style='background-color: rgb(255,255,255);left: 495px;' class='square' href='https://new.reddit.com/r/place/?cx=-489&cy=211&px=20' onMouseOver='onTileHovered(11, 11)'></a>
+<a style='background-color: rgb(54,144,234);left: 540px;' class='square' href='https://new.reddit.com/r/place/?cx=-488&cy=211&px=20' onMouseOver='onTileHovered(12, 11)'></a>
+<a style='background-color: rgb(255,255,255);left: 585px;' class='square' href='https://new.reddit.com/r/place/?cx=-487&cy=211&px=20' onMouseOver='onTileHovered(13, 11)'></a>
+<a style='background-color: rgb(255,255,255);left: 630px;' class='square' href='https://new.reddit.com/r/place/?cx=-486&cy=211&px=20' onMouseOver='onTileHovered(14, 11)'></a>
+<a style='background-color: rgb(54,144,234);left: 675px;' class='square' href='https://new.reddit.com/r/place/?cx=-485&cy=211&px=20' onMouseOver='onTileHovered(15, 11)'></a>
+<a style='background-color: rgb(54,144,234);left: 720px;' class='square' href='https://new.reddit.com/r/place/?cx=-484&cy=211&px=20' onMouseOver='onTileHovered(16, 11)'></a>
+<a style='background-color: rgb(255,168,0);left: 765px;' class='square' href='https://new.reddit.com/r/place/?cx=-483&cy=211&px=20' onMouseOver='onTileHovered(17, 11)'></a>
+<a style='background-color: rgb(255,168,0);left: 810px;' class='square' href='https://new.reddit.com/r/place/?cx=-482&cy=211&px=20' onMouseOver='onTileHovered(18, 11)'></a>
+</div><div class='row' style='top: 540px;'><a style='background-color: rgb(54,144,234);left: 0px;' class='square' href='https://new.reddit.com/r/place/?cx=-500&cy=212&px=20' onMouseOver='onTileHovered(0, 12)'></a>
+<a style='background-color: rgb(54,144,234);left: 45px;' class='square' href='https://new.reddit.com/r/place/?cx=-499&cy=212&px=20' onMouseOver='onTileHovered(1, 12)'></a>
+<a style='background-color: rgb(54,144,234);left: 90px;' class='square' href='https://new.reddit.com/r/place/?cx=-498&cy=212&px=20' onMouseOver='onTileHovered(2, 12)'></a>
+<a style='background-color: rgb(255,255,255);left: 135px;' class='square' href='https://new.reddit.com/r/place/?cx=-497&cy=212&px=20' onMouseOver='onTileHovered(3, 12)'></a>
+<a style='background-color: rgb(255,255,255);left: 180px;' class='square' href='https://new.reddit.com/r/place/?cx=-496&cy=212&px=20' onMouseOver='onTileHovered(4, 12)'></a>
+<a style='background-color: rgb(54,144,234);left: 225px;' class='square' href='https://new.reddit.com/r/place/?cx=-495&cy=212&px=20' onMouseOver='onTileHovered(5, 12)'></a>
+<a style='background-color: rgb(255,255,255);left: 270px;' class='square' href='https://new.reddit.com/r/place/?cx=-494&cy=212&px=20' onMouseOver='onTileHovered(6, 12)'></a>
+<a style='background-color: rgb(255,255,255);left: 315px;' class='square' href='https://new.reddit.com/r/place/?cx=-493&cy=212&px=20' onMouseOver='onTileHovered(7, 12)'></a>
+<a style='background-color: rgb(54,144,234);left: 360px;' class='square' href='https://new.reddit.com/r/place/?cx=-492&cy=212&px=20' onMouseOver='onTileHovered(8, 12)'></a>
+<a style='background-color: rgb(54,144,234);left: 405px;' class='square' href='https://new.reddit.com/r/place/?cx=-491&cy=212&px=20' onMouseOver='onTileHovered(9, 12)'></a>
+<a style='background-color: rgb(255,255,255);left: 450px;' class='square' href='https://new.reddit.com/r/place/?cx=-490&cy=212&px=20' onMouseOver='onTileHovered(10, 12)'></a>
+<a style='background-color: rgb(255,255,255);left: 495px;' class='square' href='https://new.reddit.com/r/place/?cx=-489&cy=212&px=20' onMouseOver='onTileHovered(11, 12)'></a>
+<a style='background-color: rgb(54,144,234);left: 540px;' class='square' href='https://new.reddit.com/r/place/?cx=-488&cy=212&px=20' onMouseOver='onTileHovered(12, 12)'></a>
+<a style='background-color: rgb(54,144,234);left: 585px;' class='square' href='https://new.reddit.com/r/place/?cx=-487&cy=212&px=20' onMouseOver='onTileHovered(13, 12)'></a>
+<a style='background-color: rgb(255,255,255);left: 630px;' class='square' href='https://new.reddit.com/r/place/?cx=-486&cy=212&px=20' onMouseOver='onTileHovered(14, 12)'></a>
+<a style='background-color: rgb(255,255,255);left: 675px;' class='square' href='https://new.reddit.com/r/place/?cx=-485&cy=212&px=20' onMouseOver='onTileHovered(15, 12)'></a>
+<a style='background-color: rgb(54,144,234);left: 720px;' class='square' href='https://new.reddit.com/r/place/?cx=-484&cy=212&px=20' onMouseOver='onTileHovered(16, 12)'></a>
+<a style='background-color: rgb(255,168,0);left: 765px;' class='square' href='https://new.reddit.com/r/place/?cx=-483&cy=212&px=20' onMouseOver='onTileHovered(17, 12)'></a>
+<a style='background-color: rgb(255,168,0);left: 810px;' class='square' href='https://new.reddit.com/r/place/?cx=-482&cy=212&px=20' onMouseOver='onTileHovered(18, 12)'></a>
+</div><div class='row' style='top: 585px;'><a style='background-color: rgb(54,144,234);left: 0px;' class='square' href='https://new.reddit.com/r/place/?cx=-500&cy=213&px=20' onMouseOver='onTileHovered(0, 13)'></a>
+<a style='background-color: rgb(54,144,234);left: 45px;' class='square' href='https://new.reddit.com/r/place/?cx=-499&cy=213&px=20' onMouseOver='onTileHovered(1, 13)'></a>
+<a style='background-color: rgb(54,144,234);left: 90px;' class='square' href='https://new.reddit.com/r/place/?cx=-498&cy=213&px=20' onMouseOver='onTileHovered(2, 13)'></a>
+<a style='background-color: rgb(255,255,255);left: 135px;' class='square' href='https://new.reddit.com/r/place/?cx=-497&cy=213&px=20' onMouseOver='onTileHovered(3, 13)'></a>
+<a style='background-color: rgb(255,255,255);left: 180px;' class='square' href='https://new.reddit.com/r/place/?cx=-496&cy=213&px=20' onMouseOver='onTileHovered(4, 13)'></a>
+<a style='background-color: rgb(54,144,234);left: 225px;' class='square' href='https://new.reddit.com/r/place/?cx=-495&cy=213&px=20' onMouseOver='onTileHovered(5, 13)'></a>
+<a style='background-color: rgb(54,144,234);left: 270px;' class='square' href='https://new.reddit.com/r/place/?cx=-494&cy=213&px=20' onMouseOver='onTileHovered(6, 13)'></a>
+<a style='background-color: rgb(255,255,255);left: 315px;' class='square' href='https://new.reddit.com/r/place/?cx=-493&cy=213&px=20' onMouseOver='onTileHovered(7, 13)'></a>
+<a style='background-color: rgb(255,255,255);left: 360px;' class='square' href='https://new.reddit.com/r/place/?cx=-492&cy=213&px=20' onMouseOver='onTileHovered(8, 13)'></a>
+<a style='background-color: rgb(54,144,234);left: 405px;' class='square' href='https://new.reddit.com/r/place/?cx=-491&cy=213&px=20' onMouseOver='onTileHovered(9, 13)'></a>
+<a style='background-color: rgb(255,255,255);left: 450px;' class='square' href='https://new.reddit.com/r/place/?cx=-490&cy=213&px=20' onMouseOver='onTileHovered(10, 13)'></a>
+<a style='background-color: rgb(255,255,255);left: 495px;' class='square' href='https://new.reddit.com/r/place/?cx=-489&cy=213&px=20' onMouseOver='onTileHovered(11, 13)'></a>
+<a style='background-color: rgb(54,144,234);left: 540px;' class='square' href='https://new.reddit.com/r/place/?cx=-488&cy=213&px=20' onMouseOver='onTileHovered(12, 13)'></a>
+<a style='background-color: rgb(54,144,234);left: 585px;' class='square' href='https://new.reddit.com/r/place/?cx=-487&cy=213&px=20' onMouseOver='onTileHovered(13, 13)'></a>
+<a style='background-color: rgb(255,255,255);left: 630px;' class='square' href='https://new.reddit.com/r/place/?cx=-486&cy=213&px=20' onMouseOver='onTileHovered(14, 13)'></a>
+<a style='background-color: rgb(255,255,255);left: 675px;' class='square' href='https://new.reddit.com/r/place/?cx=-485&cy=213&px=20' onMouseOver='onTileHovered(15, 13)'></a>
+<a style='background-color: rgb(255,168,0);left: 720px;' class='square' href='https://new.reddit.com/r/place/?cx=-484&cy=213&px=20' onMouseOver='onTileHovered(16, 13)'></a>
+<a style='background-color: rgb(255,168,0);left: 765px;' class='square' href='https://new.reddit.com/r/place/?cx=-483&cy=213&px=20' onMouseOver='onTileHovered(17, 13)'></a>
+<a style='background-color: rgb(255,168,0);left: 810px;' class='square' href='https://new.reddit.com/r/place/?cx=-482&cy=213&px=20' onMouseOver='onTileHovered(18, 13)'></a>
+</div><div class='row' style='top: 630px;'><a style='background-color: rgb(54,144,234);left: 0px;' class='square' href='https://new.reddit.com/r/place/?cx=-500&cy=214&px=20' onMouseOver='onTileHovered(0, 14)'></a>
+<a style='background-color: rgb(54,144,234);left: 45px;' class='square' href='https://new.reddit.com/r/place/?cx=-499&cy=214&px=20' onMouseOver='onTileHovered(1, 14)'></a>
+<a style='background-color: rgb(54,144,234);left: 90px;' class='square' href='https://new.reddit.com/r/place/?cx=-498&cy=214&px=20' onMouseOver='onTileHovered(2, 14)'></a>
+<a style='background-color: rgb(54,144,234);left: 135px;' class='square' href='https://new.reddit.com/r/place/?cx=-497&cy=214&px=20' onMouseOver='onTileHovered(3, 14)'></a>
+<a style='background-color: rgb(54,144,234);left: 180px;' class='square' href='https://new.reddit.com/r/place/?cx=-496&cy=214&px=20' onMouseOver='onTileHovered(4, 14)'></a>
+<a style='background-color: rgb(54,144,234);left: 225px;' class='square' href='https://new.reddit.com/r/place/?cx=-495&cy=214&px=20' onMouseOver='onTileHovered(5, 14)'></a>
+<a style='background-color: rgb(54,144,234);left: 270px;' class='square' href='https://new.reddit.com/r/place/?cx=-494&cy=214&px=20' onMouseOver='onTileHovered(6, 14)'></a>
+<a style='background-color: rgb(54,144,234);left: 315px;' class='square' href='https://new.reddit.com/r/place/?cx=-493&cy=214&px=20' onMouseOver='onTileHovered(7, 14)'></a>
+<a style='background-color: rgb(54,144,234);left: 360px;' class='square' href='https://new.reddit.com/r/place/?cx=-492&cy=214&px=20' onMouseOver='onTileHovered(8, 14)'></a>
+<a style='background-color: rgb(54,144,234);left: 405px;' class='square' href='https://new.reddit.com/r/place/?cx=-491&cy=214&px=20' onMouseOver='onTileHovered(9, 14)'></a>
+<a style='background-color: rgb(54,144,234);left: 450px;' class='square' href='https://new.reddit.com/r/place/?cx=-490&cy=214&px=20' onMouseOver='onTileHovered(10, 14)'></a>
+<a style='background-color: rgb(54,144,234);left: 495px;' class='square' href='https://new.reddit.com/r/place/?cx=-489&cy=214&px=20' onMouseOver='onTileHovered(11, 14)'></a>
+<a style='background-color: rgb(54,144,234);left: 540px;' class='square' href='https://new.reddit.com/r/place/?cx=-488&cy=214&px=20' onMouseOver='onTileHovered(12, 14)'></a>
+<a style='background-color: rgb(54,144,234);left: 585px;' class='square' href='https://new.reddit.com/r/place/?cx=-487&cy=214&px=20' onMouseOver='onTileHovered(13, 14)'></a>
+<a style='background-color: rgb(255,168,0);left: 630px;' class='square' href='https://new.reddit.com/r/place/?cx=-486&cy=214&px=20' onMouseOver='onTileHovered(14, 14)'></a>
+<a style='background-color: rgb(255,168,0);left: 675px;' class='square' href='https://new.reddit.com/r/place/?cx=-485&cy=214&px=20' onMouseOver='onTileHovered(15, 14)'></a>
+<a style='background-color: rgb(255,168,0);left: 720px;' class='square' href='https://new.reddit.com/r/place/?cx=-484&cy=214&px=20' onMouseOver='onTileHovered(16, 14)'></a>
+<a style='background-color: rgb(255,168,0);left: 765px;' class='square' href='https://new.reddit.com/r/place/?cx=-483&cy=214&px=20' onMouseOver='onTileHovered(17, 14)'></a>
+<a style='background-color: rgb(255,168,0);left: 810px;' class='square' href='https://new.reddit.com/r/place/?cx=-482&cy=214&px=20' onMouseOver='onTileHovered(18, 14)'></a>
+</div><div class='row' style='top: 675px;'><a style='background-color: rgb(54,144,234);left: 0px;' class='square' href='https://new.reddit.com/r/place/?cx=-500&cy=215&px=20' onMouseOver='onTileHovered(0, 15)'></a>
+<a style='background-color: rgb(54,144,234);left: 45px;' class='square' href='https://new.reddit.com/r/place/?cx=-499&cy=215&px=20' onMouseOver='onTileHovered(1, 15)'></a>
+<a style='background-color: rgb(54,144,234);left: 90px;' class='square' href='https://new.reddit.com/r/place/?cx=-498&cy=215&px=20' onMouseOver='onTileHovered(2, 15)'></a>
+<a style='background-color: rgb(54,144,234);left: 135px;' class='square' href='https://new.reddit.com/r/place/?cx=-497&cy=215&px=20' onMouseOver='onTileHovered(3, 15)'></a>
+<a style='background-color: rgb(54,144,234);left: 180px;' class='square' href='https://new.reddit.com/r/place/?cx=-496&cy=215&px=20' onMouseOver='onTileHovered(4, 15)'></a>
+<a style='background-color: rgb(54,144,234);left: 225px;' class='square' href='https://new.reddit.com/r/place/?cx=-495&cy=215&px=20' onMouseOver='onTileHovered(5, 15)'></a>
+<a style='background-color: rgb(0,163,104);left: 270px;' class='square' href='https://new.reddit.com/r/place/?cx=-494&cy=215&px=20' onMouseOver='onTileHovered(6, 15)'></a>
+<a style='background-color: rgb(54,144,234);left: 315px;' class='square' href='https://new.reddit.com/r/place/?cx=-493&cy=215&px=20' onMouseOver='onTileHovered(7, 15)'></a>
+<a style='background-color: rgb(54,144,234);left: 360px;' class='square' href='https://new.reddit.com/r/place/?cx=-492&cy=215&px=20' onMouseOver='onTileHovered(8, 15)'></a>
+<a style='background-color: rgb(54,144,234);left: 405px;' class='square' href='https://new.reddit.com/r/place/?cx=-491&cy=215&px=20' onMouseOver='onTileHovered(9, 15)'></a>
+<a style='background-color: rgb(54,144,234);left: 450px;' class='square' href='https://new.reddit.com/r/place/?cx=-490&cy=215&px=20' onMouseOver='onTileHovered(10, 15)'></a>
+<a style='background-color: rgb(54,144,234);left: 495px;' class='square' href='https://new.reddit.com/r/place/?cx=-489&cy=215&px=20' onMouseOver='onTileHovered(11, 15)'></a>
+<a style='background-color: rgb(54,144,234);left: 540px;' class='square' href='https://new.reddit.com/r/place/?cx=-488&cy=215&px=20' onMouseOver='onTileHovered(12, 15)'></a>
+<a style='background-color: rgb(255,168,0);left: 585px;' class='square' href='https://new.reddit.com/r/place/?cx=-487&cy=215&px=20' onMouseOver='onTileHovered(13, 15)'></a>
+<a style='background-color: rgb(255,168,0);left: 630px;' class='square' href='https://new.reddit.com/r/place/?cx=-486&cy=215&px=20' onMouseOver='onTileHovered(14, 15)'></a>
+<a style='background-color: rgb(255,168,0);left: 675px;' class='square' href='https://new.reddit.com/r/place/?cx=-485&cy=215&px=20' onMouseOver='onTileHovered(15, 15)'></a>
+<a style='background-color: rgb(255,168,0);left: 720px;' class='square' href='https://new.reddit.com/r/place/?cx=-484&cy=215&px=20' onMouseOver='onTileHovered(16, 15)'></a>
+<a style='background-color: rgb(255,168,0);left: 765px;' class='square' href='https://new.reddit.com/r/place/?cx=-483&cy=215&px=20' onMouseOver='onTileHovered(17, 15)'></a>
+<a style='background-color: rgb(255,168,0);left: 810px;' class='square' href='https://new.reddit.com/r/place/?cx=-482&cy=215&px=20' onMouseOver='onTileHovered(18, 15)'></a>
+</div><div class='row' style='top: 720px;'><a style='background-color: rgb(0,163,104);left: 0px;' class='square' href='https://new.reddit.com/r/place/?cx=-500&cy=216&px=20' onMouseOver='onTileHovered(0, 16)'></a>
+<a style='background-color: rgb(54,144,234);left: 45px;' class='square' href='https://new.reddit.com/r/place/?cx=-499&cy=216&px=20' onMouseOver='onTileHovered(1, 16)'></a>
+<a style='background-color: rgb(54,144,234);left: 90px;' class='square' href='https://new.reddit.com/r/place/?cx=-498&cy=216&px=20' onMouseOver='onTileHovered(2, 16)'></a>
+<a style='background-color: rgb(0,163,104);left: 135px;' class='square' href='https://new.reddit.com/r/place/?cx=-497&cy=216&px=20' onMouseOver='onTileHovered(3, 16)'></a>
+<a style='background-color: rgb(0,163,104);left: 180px;' class='square' href='https://new.reddit.com/r/place/?cx=-496&cy=216&px=20' onMouseOver='onTileHovered(4, 16)'></a>
+<a style='background-color: rgb(0,163,104);left: 225px;' class='square' href='https://new.reddit.com/r/place/?cx=-495&cy=216&px=20' onMouseOver='onTileHovered(5, 16)'></a>
+<a style='background-color: rgb(0,163,104);left: 270px;' class='square' href='https://new.reddit.com/r/place/?cx=-494&cy=216&px=20' onMouseOver='onTileHovered(6, 16)'></a>
+<a style='background-color: rgb(0,163,104);left: 315px;' class='square' href='https://new.reddit.com/r/place/?cx=-493&cy=216&px=20' onMouseOver='onTileHovered(7, 16)'></a>
+<a style='background-color: rgb(54,144,234);left: 360px;' class='square' href='https://new.reddit.com/r/place/?cx=-492&cy=216&px=20' onMouseOver='onTileHovered(8, 16)'></a>
+<a style='background-color: rgb(0,163,104);left: 405px;' class='square' href='https://new.reddit.com/r/place/?cx=-491&cy=216&px=20' onMouseOver='onTileHovered(9, 16)'></a>
+<a style='background-color: rgb(0,163,104);left: 450px;' class='square' href='https://new.reddit.com/r/place/?cx=-490&cy=216&px=20' onMouseOver='onTileHovered(10, 16)'></a>
+<a style='background-color: rgb(0,163,104);left: 495px;' class='square' href='https://new.reddit.com/r/place/?cx=-489&cy=216&px=20' onMouseOver='onTileHovered(11, 16)'></a>
+<a style='background-color: rgb(54,144,234);left: 540px;' class='square' href='https://new.reddit.com/r/place/?cx=-488&cy=216&px=20' onMouseOver='onTileHovered(12, 16)'></a>
+<a style='background-color: rgb(255,168,0);left: 585px;' class='square' href='https://new.reddit.com/r/place/?cx=-487&cy=216&px=20' onMouseOver='onTileHovered(13, 16)'></a>
+<a style='background-color: rgb(255,168,0);left: 630px;' class='square' href='https://new.reddit.com/r/place/?cx=-486&cy=216&px=20' onMouseOver='onTileHovered(14, 16)'></a>
+<a style='background-color: rgb(255,168,0);left: 675px;' class='square' href='https://new.reddit.com/r/place/?cx=-485&cy=216&px=20' onMouseOver='onTileHovered(15, 16)'></a>
+<a style='background-color: rgb(255,168,0);left: 720px;' class='square' href='https://new.reddit.com/r/place/?cx=-484&cy=216&px=20' onMouseOver='onTileHovered(16, 16)'></a>
+<a style='background-color: rgb(255,168,0);left: 765px;' class='square' href='https://new.reddit.com/r/place/?cx=-483&cy=216&px=20' onMouseOver='onTileHovered(17, 16)'></a>
+<a style='background-color: rgb(255,168,0);left: 810px;' class='square' href='https://new.reddit.com/r/place/?cx=-482&cy=216&px=20' onMouseOver='onTileHovered(18, 16)'></a>
+</div><div class='row' style='top: 765px;'><a style='background-color: rgb(0,163,104);left: 0px;' class='square' href='https://new.reddit.com/r/place/?cx=-500&cy=217&px=20' onMouseOver='onTileHovered(0, 17)'></a>
+<a style='background-color: rgb(0,163,104);left: 45px;' class='square' href='https://new.reddit.com/r/place/?cx=-499&cy=217&px=20' onMouseOver='onTileHovered(1, 17)'></a>
+<a style='background-color: rgb(0,163,104);left: 90px;' class='square' href='https://new.reddit.com/r/place/?cx=-498&cy=217&px=20' onMouseOver='onTileHovered(2, 17)'></a>
+<a style='background-color: rgb(0,163,104);left: 135px;' class='square' href='https://new.reddit.com/r/place/?cx=-497&cy=217&px=20' onMouseOver='onTileHovered(3, 17)'></a>
+<a style='background-color: rgb(0,163,104);left: 180px;' class='square' href='https://new.reddit.com/r/place/?cx=-496&cy=217&px=20' onMouseOver='onTileHovered(4, 17)'></a>
+<a style='background-color: rgb(0,163,104);left: 225px;' class='square' href='https://new.reddit.com/r/place/?cx=-495&cy=217&px=20' onMouseOver='onTileHovered(5, 17)'></a>
+<a style='background-color: rgb(0,163,104);left: 270px;' class='square' href='https://new.reddit.com/r/place/?cx=-494&cy=217&px=20' onMouseOver='onTileHovered(6, 17)'></a>
+<a style='background-color: rgb(0,163,104);left: 315px;' class='square' href='https://new.reddit.com/r/place/?cx=-493&cy=217&px=20' onMouseOver='onTileHovered(7, 17)'></a>
+<a style='background-color: rgb(54,144,234);left: 360px;' class='square' href='https://new.reddit.com/r/place/?cx=-492&cy=217&px=20' onMouseOver='onTileHovered(8, 17)'></a>
+<a style='background-color: rgb(0,163,104);left: 405px;' class='square' href='https://new.reddit.com/r/place/?cx=-491&cy=217&px=20' onMouseOver='onTileHovered(9, 17)'></a>
+<a style='background-color: rgb(0,163,104);left: 450px;' class='square' href='https://new.reddit.com/r/place/?cx=-490&cy=217&px=20' onMouseOver='onTileHovered(10, 17)'></a>
+<a style='background-color: rgb(0,163,104);left: 495px;' class='square' href='https://new.reddit.com/r/place/?cx=-489&cy=217&px=20' onMouseOver='onTileHovered(11, 17)'></a>
+<a style='background-color: rgb(0,163,104);left: 540px;' class='square' href='https://new.reddit.com/r/place/?cx=-488&cy=217&px=20' onMouseOver='onTileHovered(12, 17)'></a>
+<a style='background-color: rgb(54,144,234);left: 585px;' class='square' href='https://new.reddit.com/r/place/?cx=-487&cy=217&px=20' onMouseOver='onTileHovered(13, 17)'></a>
+<a style='background-color: rgb(255,168,0);left: 630px;' class='square' href='https://new.reddit.com/r/place/?cx=-486&cy=217&px=20' onMouseOver='onTileHovered(14, 17)'></a>
+<a style='background-color: rgb(255,168,0);left: 675px;' class='square' href='https://new.reddit.com/r/place/?cx=-485&cy=217&px=20' onMouseOver='onTileHovered(15, 17)'></a>
+<a style='background-color: rgb(255,168,0);left: 720px;' class='square' href='https://new.reddit.com/r/place/?cx=-484&cy=217&px=20' onMouseOver='onTileHovered(16, 17)'></a>
+<a style='background-color: rgb(255,168,0);left: 765px;' class='square' href='https://new.reddit.com/r/place/?cx=-483&cy=217&px=20' onMouseOver='onTileHovered(17, 17)'></a>
+<a style='background-color: rgb(255,168,0);left: 810px;' class='square' href='https://new.reddit.com/r/place/?cx=-482&cy=217&px=20' onMouseOver='onTileHovered(18, 17)'></a>
+</div><div class='row' style='top: 810px;'><a style='background-color: rgb(0,163,104);left: 0px;' class='square' href='https://new.reddit.com/r/place/?cx=-500&cy=218&px=20' onMouseOver='onTileHovered(0, 18)'></a>
+<a style='background-color: rgb(0,163,104);left: 45px;' class='square' href='https://new.reddit.com/r/place/?cx=-499&cy=218&px=20' onMouseOver='onTileHovered(1, 18)'></a>
+<a style='background-color: rgb(54,144,234);left: 90px;' class='square' href='https://new.reddit.com/r/place/?cx=-498&cy=218&px=20' onMouseOver='onTileHovered(2, 18)'></a>
+<a style='background-color: rgb(54,144,234);left: 135px;' class='square' href='https://new.reddit.com/r/place/?cx=-497&cy=218&px=20' onMouseOver='onTileHovered(3, 18)'></a>
+<a style='background-color: rgb(0,163,104);left: 180px;' class='square' href='https://new.reddit.com/r/place/?cx=-496&cy=218&px=20' onMouseOver='onTileHovered(4, 18)'></a>
+<a style='background-color: rgb(54,144,234);left: 225px;' class='square' href='https://new.reddit.com/r/place/?cx=-495&cy=218&px=20' onMouseOver='onTileHovered(5, 18)'></a>
+<a style='background-color: rgb(54,144,234);left: 270px;' class='square' href='https://new.reddit.com/r/place/?cx=-494&cy=218&px=20' onMouseOver='onTileHovered(6, 18)'></a>
+<a style='background-color: rgb(54,144,234);left: 315px;' class='square' href='https://new.reddit.com/r/place/?cx=-493&cy=218&px=20' onMouseOver='onTileHovered(7, 18)'></a>
+<a style='background-color: rgb(54,144,234);left: 360px;' class='square' href='https://new.reddit.com/r/place/?cx=-492&cy=218&px=20' onMouseOver='onTileHovered(8, 18)'></a>
+<a style='background-color: rgb(54,144,234);left: 405px;' class='square' href='https://new.reddit.com/r/place/?cx=-491&cy=218&px=20' onMouseOver='onTileHovered(9, 18)'></a>
+<a style='background-color: rgb(54,144,234);left: 450px;' class='square' href='https://new.reddit.com/r/place/?cx=-490&cy=218&px=20' onMouseOver='onTileHovered(10, 18)'></a>
+<a style='background-color: rgb(54,144,234);left: 495px;' class='square' href='https://new.reddit.com/r/place/?cx=-489&cy=218&px=20' onMouseOver='onTileHovered(11, 18)'></a>
+<a style='background-color: rgb(0,163,104);left: 540px;' class='square' href='https://new.reddit.com/r/place/?cx=-488&cy=218&px=20' onMouseOver='onTileHovered(12, 18)'></a>
+<a style='background-color: rgb(0,163,104);left: 585px;' class='square' href='https://new.reddit.com/r/place/?cx=-487&cy=218&px=20' onMouseOver='onTileHovered(13, 18)'></a>
+<a style='background-color: rgb(0,163,104);left: 630px;' class='square' href='https://new.reddit.com/r/place/?cx=-486&cy=218&px=20' onMouseOver='onTileHovered(14, 18)'></a>
+<a style='background-color: rgb(54,144,234);left: 675px;' class='square' href='https://new.reddit.com/r/place/?cx=-485&cy=218&px=20' onMouseOver='onTileHovered(15, 18)'></a>
+<a style='background-color: rgb(255,168,0);left: 720px;' class='square' href='https://new.reddit.com/r/place/?cx=-484&cy=218&px=20' onMouseOver='onTileHovered(16, 18)'></a>
+<a style='background-color: rgb(255,168,0);left: 765px;' class='square' href='https://new.reddit.com/r/place/?cx=-483&cy=218&px=20' onMouseOver='onTileHovered(17, 18)'></a>
+<a style='background-color: rgb(255,168,0);left: 810px;' class='square' href='https://new.reddit.com/r/place/?cx=-482&cy=218&px=20' onMouseOver='onTileHovered(18, 18)'></a>
+</div>
+    </body>
+    </html>
+    
